@@ -1,55 +1,8 @@
-# Project template for rp2040-hal
+# Project Sergej
 
-This template is intended as a starting point for developing your own firmware based on the rp2040-hal.
+> Inspired by [Project Igor](https://github.com/UrbanCircles/igor)
 
-It includes all of the `knurling-rs` tooling as showcased in https://github.com/knurling-rs/app-template (`defmt`, `defmt-rtt`, `panic-probe`, `flip-link`) to make development as easy as possible.
 
-`probe-rs` is configured as the default runner, so you can start your program as easy as
-```sh
-cargo run --release
-```
-
-If you aren't using a debugger (or want to use other debugging configurations), check out [alternative runners](#alternative-runners) for other options
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li><a href="#markdown-header-requirements">Requirements</a></li>
-    <li><a href="#installation-of-development-dependencies">Installation of development dependencies</a></li>
-    <li><a href="#running">Running</a></li>
-    <li><a href="#alternative-runners">Alternative runners</a></li>
-    <li><a href="#notes-on-using-rp2040_boot2">Notes on using rp2040_boot2</a></li>
-    <li><a href="#feature-flags">Feature flags</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#code-of-conduct">Code of conduct</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-<!-- Requirements -->
-<details open="open">
-  <summary><h2 style="display: inline-block" id="requirements">Requirements</h2></summary>
-  
-- The standard Rust tooling (cargo, rustup) which you can install from https://rustup.rs/
-
-- Toolchain support for the cortex-m0+ processors in the rp2040 (thumbv6m-none-eabi)
-
-- flip-link - this allows you to detect stack-overflows on the first core, which is the only supported target for now.
-
-- (by default) A [`probe-rs` installation](https://probe.rs/docs/getting-started/installation/)
-
-- A [`probe-rs` compatible](https://probe.rs/docs/getting-started/probe-setup/) probe
-
-  You can use a second
-  [Pico as a CMSIS-DAP debug probe](debug_probes.md#raspberry-pi-pico). Details
-  on other supported debug probes can be found in
-  [debug_probes.md](debug_probes.md)
-
-</details>
 
 <!-- Installation of development dependencies -->
 <details open="open">
